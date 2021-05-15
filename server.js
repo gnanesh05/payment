@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({
 
 
 const rpay = new razorpay({
-	key_id: process.env.KEY_ID,
-	key_secret: process.env.SECRET_KEY
+	key_id: 'rzp_test_TsmEtUBYBqS4pn',
+	key_secret: 'MH5NREh3fzzcSHXu937lEoxE'
 });
 
 app.set("view engine","ejs");
