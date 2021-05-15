@@ -3,14 +3,14 @@ const app = express();
 const ejs = require('ejs');
 const razorpay = require('razorpay');
 const bodyParser = require('body-parser');
-
+require('dotenv').config();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-require('dotenv').config();
+
 const rpay = new razorpay({
 	key_id: process.env.key,
 	key_secret: process.env.secret
