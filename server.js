@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({
 
 require('dotenv').config();
 const rpay = new razorpay({
-	key_id: process.env.key_id,
-	key_secret: process.env.key_secret
+	key_id: process.env.key,
+	key_secret: process.env.secret
 });
 
 app.set("view engine","ejs");
