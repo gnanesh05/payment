@@ -33,7 +33,7 @@ app.get("/",(req,res)=>{
 
 
 
-let port = 3000 ||  process.env.PORT;
+let port = process.env.PORT || 3000;
 app.listen(port, () => {
 console.log(`app listening at http://localhost:${port}`)
 
