@@ -11,10 +11,10 @@ app.use(bodyParser.urlencoded({
 }));
 
 
-const rpay = new razorpay({
-	key_id: 'rzp_test_TsmEtUBYBqS4pn',
-	key_secret: 'MH5NREh3fzzcSHXu937lEoxE'
-});
+// const rpay = new razorpay({
+// 	key_id: 'rzp_test_TsmEtUBYBqS4pn',
+// 	key_secret: 'MH5NREh3fzzcSHXu937lEoxE'
+// });
 
 app.set("view engine","ejs");
 
