@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Donation.com</title>
+    <title> dONATION.IN</title>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
   </head>
 
   <body>
 
+	  <nav class="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
+		  <div class="navbar-brand">
+			<a class="navbar-item" href="/">
+			  <h3 class="title is-size-3">
+				  dONATION.IN
+				</h3>
+			</a>
+
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			</a>
+		  </div>
+    </nav>
 		<section class="hero is-link is-fullheight">
 			<div class="hero-body is-centered">
 				<div class="container">
@@ -19,8 +36,7 @@
 						<div class="column is-6">
 							<p class="title is-size-1">Donation</p>
 							<p class="subtitle is-size-4">The price you pay for a better world.</p>
-
-							<!-- <button class="button is-link is-light is-medium">Donate</button> -->
+							 
 							<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HAyv4mAWxcT8iM" async> </script> </form>
 						</div>
 					
@@ -38,7 +54,7 @@
 			</div>
 	</section>
 
-	  
+	<script src="/index.js"></script>
   </body>
 
 </html>
